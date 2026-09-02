@@ -1,5 +1,8 @@
 monorepo_root = true
 
+[vars]
+model_name = "gpt_5_6_sol_default"
+
 [monorepo]
 config_roots = ["methods/*"]
 
@@ -12,7 +15,7 @@ depends = ["//methods/...:test"]
 
 [tasks.bench]
 description = "Benchmark every method"
-depends = ["//methods/...:bench"]
+run = "deno bench --json > ./results/json/{{ vars.model_name }}_benchmark_results.json"
 
 [tasks.check]
 description = "Type-check every method"
@@ -33,4 +36,3 @@ depends = ["//methods/...:fmt-check"]
 [tasks.verify]
 description = "Run all non-mutating validation tasks for every method"
 depends = [":fmt-check", ":lint", ":check", ":test"]
-

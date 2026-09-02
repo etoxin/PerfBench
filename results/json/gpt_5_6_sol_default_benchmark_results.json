@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "runtime": "Deno/2.9.4 aarch64-apple-darwin",
+  "cpu": "Apple M5 Pro",
+  "benches": [
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/dedupe/dedupe.bench.ts",
+      "group": null,
+      "name": "dedupe",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 19,
+            "min": 5880.9584,
+            "max": 6080.5875,
+            "avg": 5934.260757894737,
+            "p75": 5947.0542,
+            "p99": 6080.5875,
+            "p995": 6080.5875,
+            "p999": 6080.5875,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/difference/difference.bench.ts",
+      "group": null,
+      "name": "difference",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 68882,
+            "min": 6375.0,
+            "max": 57750.0,
+            "avg": 7261.0,
+            "p75": 7000.0,
+            "p99": 11375.0,
+            "p995": 19792.0,
+            "p999": 26959.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/frequencyCount/frequencyCount.bench.ts",
+      "group": null,
+      "name": "frequencyCount",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 40717,
+            "min": 10792.0,
+            "max": 276125.0,
+            "avg": 12284.0,
+            "p75": 12250.0,
+            "p99": 16167.0,
+            "p995": 16584.0,
+            "p999": 32750.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/groupBy/groupBy.bench.ts",
+      "group": null,
+      "name": "groupBy",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 20,
+            "min": 4827.3416,
+            "max": 5673.0958,
+            "avg": 5552.089989999999,
+            "p75": 5633.0791,
+            "p99": 5673.0958,
+            "p995": 5673.0958,
+            "p999": 5673.0958,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/intersection/intersection.bench.ts",
+      "group": null,
+      "name": "intersection",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 67987,
+            "min": 6458.0,
+            "max": 66292.0,
+            "avg": 7357.0,
+            "p75": 7083.0,
+            "p99": 11334.0,
+            "p995": 20167.0,
+            "p999": 27042.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    }
+  ]
+}

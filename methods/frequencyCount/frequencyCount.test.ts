@@ -27,8 +27,8 @@ Deno.test("supports arbitrary values as keys", () => {
   const value = { id: 1 };
 
   assertEquals(
-    frequencyCount([NaN, NaN, value, value]),
-    new Map([
+    frequencyCount<number | typeof value>([NaN, NaN, value, value]),
+    new Map<number | typeof value, number>([
       [NaN, 2],
       [value, 2],
     ]),
