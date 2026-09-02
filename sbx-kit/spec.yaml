@@ -1,0 +1,40 @@
+schemaVersion: "2"
+kind: mixin
+name: local-ollama-opencode
+version: "0.1.0"
+displayName: Local Ollama for OpenCode
+description: Configure OpenCode in Docker Sandboxes to use Ollama running on the Mac host.
+
+requires:
+  agent: opencode
+
+environment:
+  variables:
+    OPENCODE_CONFIG: /home/agent/.config/opencode-local.json
+
+permissions:
+  network:
+    allow:
+      - localhost:11434
+      - localhost:5173
+      - localhost:4000
+
+agentInstructions:
+  content: |
+    Local Ollama runs on the host machine.
+
+    Default model:
+      qwen3.8:27b-mlx
+
+    Higher-quality coding model:
+      qwen3.8:27b-mxfp8
+
+    Deep file analysis / reasoning:
+      gemma4:31b-mxfp8
+
+    Fast full-precision Gemma:
+      gemma4:12b-mlx-bf16
+
+    Do not install or start Ollama inside the sandbox.
+
+    mise is installed in sanfbox. Use it for dependancies.

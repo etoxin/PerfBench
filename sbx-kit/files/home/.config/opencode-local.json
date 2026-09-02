@@ -1,0 +1,143 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+
+  "model": "ollama/qwen3.8:27b-mlx",
+  "small_model": "ollama/gemma4:e4b-mlx",
+  "lsp": true,
+
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Mac Ollama",
+
+      "options": {
+        "baseURL": "http://host.docker.internal:11434/v1"
+      },
+
+      "models": {
+        "qwen3.8:27b-mlx": {
+          "name": "Qwen 3.8 27B MLX [18 → ~35 GB] [256K ctx]",
+          "limit": {
+            "context": 262144,
+            "output": 8192
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+
+        "qwen3.8:27b-mxfp8": {
+          "name": "Qwen 3.8 27B MXFP8 [31 → ~48 GB] [256K ctx]",
+          "limit": {
+            "context": 262144,
+            "output": 8192
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+
+        "qwen3.8:27b-mxfp8-64K": {
+          "id": "qwen3.8:27b-mxfp8",
+          "name": "Qwen 3.8 27B MXFP8 [31 GB] [64K ctx]",
+          "limit": {
+            "context": 65536,
+            "output": 8192
+          },
+          "variants": {
+            "low": {
+              "reasoningEffort": "low"
+            },
+            "medium": {
+              "reasoningEffort": "medium"
+            },
+            "high": {
+              "reasoningEffort": "high"
+            },
+            "xhigh": {
+              "reasoningEffort": "xhigh"
+            }
+          }
+        },
+
+        "gemma4:26b-mxfp8": {
+          "name": "Gemma 4 26B MXFP8 [28 → ~45 GB] [256K ctx]",
+          "limit": {
+            "context": 262144,
+            "output": 8192
+          }
+        },
+
+        "gemma4:31b-mlx": {
+          "name": "Gemma 4 31B MLX [20 → ~37 GB] [256K ctx]",
+          "limit": {
+            "context": 262144,
+            "output": 8192
+          }
+        },
+
+        "gemma4:31b-mxfp8": {
+          "name": "Gemma 4 31B MXFP8 [33 → ~50 GB] [256K ctx]",
+          "limit": {
+            "context": 262144,
+            "output": 8192
+          }
+        },
+
+        "gemma4:12b-mlx-bf16": {
+          "name": "Gemma 4 12B BF16 [24 → ~41 GB] [256K ctx]",
+          "limit": {
+            "context": 262144,
+            "output": 8192
+          }
+        },
+
+        "muse-glimmer:30b-mlx": {
+          "name": "Muse Glimmer 30B MLX [21 → ~31 GB] [128K ctx]",
+          "limit": {
+            "context": 131072,
+            "output": 8192
+          }
+        },
+
+        "muse-glimmer:30b-mxfp8-dflash": {
+          "name": "Muse Glimmer 30B MXFP8 DFLASH [35 → ~45 GB] [128K ctx]",
+          "limit": {
+            "context": 131072,
+            "output": 8192
+          }
+        },
+
+        "qwen2.5:72b-instruct-q3_K_S": {
+          "name": "Qwen 2.5 72B Q3_K_S [34 → ~42 GB] [32K ctx]",
+          "limit": {
+            "context": 32768,
+            "output": 8192
+          }
+        }
+      }
+    }
+  }
+}
