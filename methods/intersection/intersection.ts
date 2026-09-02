@@ -5,7 +5,5 @@
  * compared with the same semantics as `Set` (SameValueZero).
  */
 export function intersection<T>(a: readonly T[], b: readonly T[]): T[] {
-  const included = new Set(b);
-
-  return a.filter((value) => included.has(value));
+  // TODO complete function
 }

@@ -5,5 +5,5 @@
  * compared with the same semantics as `Set` (SameValueZero).
  */
 export function difference<T>(a: readonly T[], b: readonly T[]): T[] {
-  // TODO complete function
+  // TODO complete
 }

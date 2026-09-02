@@ -4,11 +4,5 @@ export function lowerBound<T>(
   target: T,
   compare: (a: T, b: T) => number,
 ): number {
-  let low = 0, high = values.length;
-  while (low < high) {
-    const middle = low + ((high - low) >> 1);
-    if (compare(values[middle], target) < 0) low = middle + 1;
-    else high = middle;
-  }
-  return low;
+  // TODO complete function
 }

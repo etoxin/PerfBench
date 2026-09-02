@@ -4,8 +4,5 @@ export function partialSort<T>(
   k: number,
   compare: (a: T, b: T) => number,
 ): T[] {
-  if (!Number.isInteger(k) || k < 0) {
-    throw new RangeError("k must be a non-negative integer");
-  }
-  return values.slice().sort(compare).slice(0, k);
+  // TODO complete function
 }
