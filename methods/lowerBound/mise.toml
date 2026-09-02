@@ -1,0 +1,17 @@
+[tools]
+deno = "2.9.4"
+
+[tasks.test]
+run = "deno test lowerBound.test.ts"
+[tasks.bench]
+run = "deno bench lowerBound.bench.ts"
+[tasks.check]
+run = "deno check lowerBound.ts lowerBound.test.ts lowerBound.bench.ts"
+[tasks.lint]
+run = "deno lint ."
+[tasks.fmt]
+run = "deno fmt ."
+[tasks."fmt-check"]
+run = "deno fmt --check ."
+[tasks.verify]
+depends = ["fmt-check", "lint", "check", "test"]

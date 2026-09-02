@@ -1,0 +1,30 @@
+[tools]
+deno = "2.9.4"
+
+[tasks.test]
+description = "Run the partition tests"
+run = "deno test partition.test.ts"
+
+[tasks.bench]
+description = "Benchmark partition"
+run = "deno bench partition.bench.ts"
+
+[tasks.check]
+description = "Type-check the implementation, tests, and benchmark"
+run = "deno check partition.ts partition.test.ts partition.bench.ts"
+
+[tasks.lint]
+description = "Lint the partition sources"
+run = "deno lint ."
+
+[tasks.fmt]
+description = "Format the partition sources"
+run = "deno fmt ."
+
+[tasks."fmt-check"]
+description = "Check source formatting without changing files"
+run = "deno fmt --check ."
+
+[tasks.verify]
+description = "Run all non-mutating validation tasks"
+depends = ["fmt-check", "lint", "check", "test"]

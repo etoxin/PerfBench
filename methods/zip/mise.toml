@@ -1,0 +1,30 @@
+[tools]
+deno = "2.9.4"
+
+[tasks.test]
+description = "Run the zip tests"
+run = "deno test zip.test.ts"
+
+[tasks.bench]
+description = "Benchmark zip"
+run = "deno bench zip.bench.ts"
+
+[tasks.check]
+description = "Type-check the implementation, tests, and benchmark"
+run = "deno check zip.ts zip.test.ts zip.bench.ts"
+
+[tasks.lint]
+description = "Lint the zip sources"
+run = "deno lint ."
+
+[tasks.fmt]
+description = "Format the zip sources"
+run = "deno fmt ."
+
+[tasks."fmt-check"]
+description = "Check source formatting without changing files"
+run = "deno fmt --check ."
+
+[tasks.verify]
+description = "Run all non-mutating validation tasks"
+depends = ["fmt-check", "lint", "check", "test"]

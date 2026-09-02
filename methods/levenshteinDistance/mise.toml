@@ -1,0 +1,16 @@
+[tools]
+deno = "2.9.4"
+[tasks.test]
+run = "deno test levenshteinDistance.test.ts"
+[tasks.bench]
+run = "deno bench levenshteinDistance.bench.ts"
+[tasks.check]
+run = "deno check levenshteinDistance.ts levenshteinDistance.test.ts levenshteinDistance.bench.ts"
+[tasks.lint]
+run = "deno lint ."
+[tasks.fmt]
+run = "deno fmt ."
+[tasks."fmt-check"]
+run = "deno fmt --check ."
+[tasks.verify]
+depends = ["fmt-check", "lint", "check", "test"]

@@ -1,0 +1,30 @@
+[tools]
+deno = "2.9.4"
+
+[tasks.test]
+description = "Run the prefixSum tests"
+run = "deno test prefixSum.test.ts"
+
+[tasks.bench]
+description = "Benchmark prefixSum"
+run = "deno bench prefixSum.bench.ts"
+
+[tasks.check]
+description = "Type-check the implementation, tests, and benchmark"
+run = "deno check prefixSum.ts prefixSum.test.ts prefixSum.bench.ts"
+
+[tasks.lint]
+description = "Lint the prefixSum sources"
+run = "deno lint ."
+
+[tasks.fmt]
+description = "Format the prefixSum sources"
+run = "deno fmt ."
+
+[tasks."fmt-check"]
+description = "Check source formatting without changing files"
+run = "deno fmt --check ."
+
+[tasks.verify]
+description = "Run all non-mutating validation tasks"
+depends = ["fmt-check", "lint", "check", "test"]

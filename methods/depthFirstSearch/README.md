@@ -1,0 +1,4 @@
+# depthFirstSearch
+
+See [depthFirstSearch.test.ts](./depthFirstSearch.test.ts) for the API contract,
+examples, and edge cases.

@@ -1,0 +1,16 @@
+[tools]
+deno = "2.9.4"
+[tasks.test]
+run = "deno test joinRecordsByKey.test.ts"
+[tasks.bench]
+run = "deno bench joinRecordsByKey.bench.ts"
+[tasks.check]
+run = "deno check joinRecordsByKey.ts joinRecordsByKey.test.ts joinRecordsByKey.bench.ts"
+[tasks.lint]
+run = "deno lint ."
+[tasks.fmt]
+run = "deno fmt ."
+[tasks."fmt-check"]
+run = "deno fmt --check ."
+[tasks.verify]
+depends = ["fmt-check", "lint", "check", "test"]

@@ -1,0 +1,30 @@
+[tools]
+deno = "2.9.4"
+
+[tasks.test]
+description = "Run the slidingWindowMax tests"
+run = "deno test slidingWindowMax.test.ts"
+
+[tasks.bench]
+description = "Benchmark slidingWindowMax"
+run = "deno bench slidingWindowMax.bench.ts"
+
+[tasks.check]
+description = "Type-check the implementation, tests, and benchmark"
+run = "deno check slidingWindowMax.ts slidingWindowMax.test.ts slidingWindowMax.bench.ts"
+
+[tasks.lint]
+description = "Lint the slidingWindowMax sources"
+run = "deno lint ."
+
+[tasks.fmt]
+description = "Format the slidingWindowMax sources"
+run = "deno fmt ."
+
+[tasks."fmt-check"]
+description = "Check source formatting without changing files"
+run = "deno fmt --check ."
+
+[tasks.verify]
+description = "Run all non-mutating validation tasks"
+depends = ["fmt-check", "lint", "check", "test"]

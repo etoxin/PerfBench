@@ -1,0 +1,16 @@
+[tools]
+deno = "2.9.4"
+[tasks.test]
+run = "deno test stableSort.test.ts"
+[tasks.bench]
+run = "deno bench stableSort.bench.ts"
+[tasks.check]
+run = "deno check stableSort.ts stableSort.test.ts stableSort.bench.ts"
+[tasks.lint]
+run = "deno lint ."
+[tasks.fmt]
+run = "deno fmt ."
+[tasks."fmt-check"]
+run = "deno fmt --check ."
+[tasks.verify]
+depends = ["fmt-check", "lint", "check", "test"]

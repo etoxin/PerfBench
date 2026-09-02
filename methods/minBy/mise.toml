@@ -1,0 +1,30 @@
+[tools]
+deno = "2.9.4"
+
+[tasks.test]
+description = "Run the minBy tests"
+run = "deno test minBy.test.ts"
+
+[tasks.bench]
+description = "Benchmark minBy"
+run = "deno bench minBy.bench.ts"
+
+[tasks.check]
+description = "Type-check the implementation, tests, and benchmark"
+run = "deno check minBy.ts minBy.test.ts minBy.bench.ts"
+
+[tasks.lint]
+description = "Lint the minBy sources"
+run = "deno lint ."
+
+[tasks.fmt]
+description = "Format the minBy sources"
+run = "deno fmt ."
+
+[tasks."fmt-check"]
+description = "Check source formatting without changing files"
+run = "deno fmt --check ."
+
+[tasks.verify]
+description = "Run all non-mutating validation tasks"
+depends = ["fmt-check", "lint", "check", "test"]

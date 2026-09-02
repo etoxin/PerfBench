@@ -1,0 +1,16 @@
+[tools]
+deno = "2.9.4"
+[tasks.test]
+run = "deno test PriorityQueue.test.ts"
+[tasks.bench]
+run = "deno bench PriorityQueue.bench.ts"
+[tasks.check]
+run = "deno check PriorityQueue.ts PriorityQueue.test.ts PriorityQueue.bench.ts"
+[tasks.lint]
+run = "deno lint ."
+[tasks.fmt]
+run = "deno fmt ."
+[tasks."fmt-check"]
+run = "deno fmt --check ."
+[tasks.verify]
+depends = ["fmt-check", "lint", "check", "test"]

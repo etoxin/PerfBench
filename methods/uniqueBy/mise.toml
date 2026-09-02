@@ -1,0 +1,30 @@
+[tools]
+deno = "2.9.4"
+
+[tasks.test]
+description = "Run the uniqueBy tests"
+run = "deno test uniqueBy.test.ts"
+
+[tasks.bench]
+description = "Benchmark uniqueBy"
+run = "deno bench uniqueBy.bench.ts"
+
+[tasks.check]
+description = "Type-check the implementation, tests, and benchmark"
+run = "deno check uniqueBy.ts uniqueBy.test.ts uniqueBy.bench.ts"
+
+[tasks.lint]
+description = "Lint the uniqueBy sources"
+run = "deno lint ."
+
+[tasks.fmt]
+description = "Format the uniqueBy sources"
+run = "deno fmt ."
+
+[tasks."fmt-check"]
+description = "Check source formatting without changing files"
+run = "deno fmt --check ."
+
+[tasks.verify]
+description = "Run all non-mutating validation tasks"
+depends = ["fmt-check", "lint", "check", "test"]

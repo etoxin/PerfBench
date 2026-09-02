@@ -1,8 +1,492 @@
 {
   "version": 1,
-  "runtime": "Deno/2.9.4 aarch64-apple-darwin",
-  "cpu": "Apple M5 Pro",
+  "runtime": "Deno/2.9.4 aarch64-unknown-linux-gnu",
+  "cpu": "unknown",
   "benches": [
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/BitSet/BitSet.bench.ts",
+      "group": null,
+      "name": "BitSet",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 39,
+            "min": 1589.7458,
+            "max": 2068.475,
+            "avg": 1729.0755384615388,
+            "p75": 1909.15,
+            "p99": 2068.475,
+            "p995": 2068.475,
+            "p999": 2068.475,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/BloomFilter/BloomFilter.bench.ts",
+      "group": null,
+      "name": "BloomFilter",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 2033,
+            "min": 224583.0,
+            "max": 337083.0,
+            "avg": 247137.0,
+            "p75": 250375.0,
+            "p99": 284000.0,
+            "p995": 288542.0,
+            "p999": 300417.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/Deque/Deque.bench.ts",
+      "group": null,
+      "name": "Deque",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 21,
+            "min": 4506.2875,
+            "max": 4654.7583,
+            "avg": 4562.170033333334,
+            "p75": 4581.925,
+            "p99": 4654.7583,
+            "p995": 4654.7583,
+            "p999": 4654.7583,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/LRUCache/LRUCache.bench.ts",
+      "group": null,
+      "name": "LRUCache",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 10898,
+            "min": 41375.0,
+            "max": 2050208.0,
+            "avg": 45928.0,
+            "p75": 45875.0,
+            "p99": 69709.0,
+            "p995": 73625.0,
+            "p999": 93584.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/MaxHeap/MaxHeap.bench.ts",
+      "group": null,
+      "name": "MaxHeap",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 25613,
+            "min": 14666.0,
+            "max": 275583.0,
+            "avg": 19528.0,
+            "p75": 20167.0,
+            "p99": 29917.0,
+            "p995": 39333.0,
+            "p999": 58417.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/MinHeap/MinHeap.bench.ts",
+      "group": null,
+      "name": "MinHeap",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 25217,
+            "min": 14791.0,
+            "max": 84375.0,
+            "avg": 19835.0,
+            "p75": 20709.0,
+            "p99": 30458.0,
+            "p995": 40750.0,
+            "p999": 50083.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/PriorityQueue/PriorityQueue.bench.ts",
+      "group": null,
+      "name": "PriorityQueue",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 16769,
+            "min": 26667.0,
+            "max": 94334.0,
+            "avg": 29837.0,
+            "p75": 29750.0,
+            "p99": 49458.0,
+            "p995": 63083.0,
+            "p999": 72250.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/RingBuffer/RingBuffer.bench.ts",
+      "group": null,
+      "name": "RingBuffer",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 30,
+            "min": 2558.45,
+            "max": 2773.2417,
+            "avg": 2607.1156933333336,
+            "p75": 2629.2625,
+            "p99": 2773.2417,
+            "p995": 2773.2417,
+            "p999": 2773.2417,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/Trie/Trie.bench.ts",
+      "group": null,
+      "name": "Trie",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 7162,
+            "min": 61000.0,
+            "max": 186625.0,
+            "avg": 69923.0,
+            "p75": 70500.0,
+            "p99": 140875.0,
+            "p995": 146541.0,
+            "p999": 156625.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/UnionFind/UnionFind.bench.ts",
+      "group": null,
+      "name": "UnionFind",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 25939,
+            "min": 17042.0,
+            "max": 1138709.0,
+            "avg": 19285.0,
+            "p75": 19292.0,
+            "p99": 28167.0,
+            "p995": 31250.0,
+            "p999": 42625.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/anagramCheck/anagramCheck.bench.ts",
+      "group": null,
+      "name": "anagramCheck",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 18374,
+            "min": 24834.0,
+            "max": 94875.0,
+            "avg": 27228.0,
+            "p75": 27708.0,
+            "p99": 35375.0,
+            "p995": 41917.0,
+            "p999": 54041.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/binarySearch/binarySearch.bench.ts",
+      "group": null,
+      "name": "binarySearch",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 6623,
+            "min": 6.8917,
+            "max": 12.3625,
+            "avg": 7.561711475162311,
+            "p75": 7.6208,
+            "p99": 9.3458,
+            "p995": 9.7167,
+            "p999": 10.3833,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/breadthFirstSearch/breadthFirstSearch.bench.ts",
+      "group": null,
+      "name": "breadthFirstSearch",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 25647,
+            "min": 13959.0,
+            "max": 95625.0,
+            "avg": 19506.0,
+            "p75": 20583.0,
+            "p99": 43459.0,
+            "p995": 46334.0,
+            "p999": 55084.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/camelToSnake/camelToSnake.bench.ts",
+      "group": null,
+      "name": "camelToSnake",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 160,
+            "min": 318.7375,
+            "max": 380.4417,
+            "avg": 335.6313306249998,
+            "p75": 337.3958,
+            "p99": 379.1042,
+            "p995": 380.4417,
+            "p999": 380.4417,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/chunk/chunk.bench.ts",
+      "group": null,
+      "name": "chunk",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 134,
+            "min": 390.0,
+            "max": 527.3084,
+            "avg": 404.2841708955223,
+            "p75": 404.375,
+            "p99": 505.7083,
+            "p995": 527.3084,
+            "p999": 527.3084,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/collapseWhitespace/collapseWhitespace.bench.ts",
+      "group": null,
+      "name": "collapseWhitespace",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 32,
+            "min": 2303.625,
+            "max": 2403.1,
+            "avg": 2342.972653125,
+            "p75": 2361.3834,
+            "p99": 2403.1,
+            "p995": 2403.1,
+            "p999": 2403.1,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/compact/compact.bench.ts",
+      "group": null,
+      "name": "compact",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 127278,
+            "min": 3000.0,
+            "max": 186209.0,
+            "avg": 3930.0,
+            "p75": 3709.0,
+            "p99": 10541.0,
+            "p995": 13541.0,
+            "p999": 30458.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/compareSemver/compareSemver.bench.ts",
+      "group": null,
+      "name": "compareSemver",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 275,
+            "min": 177.7875,
+            "max": 213.0209,
+            "avg": 188.9678625454547,
+            "p75": 191.4875,
+            "p99": 208.2292,
+            "p995": 209.175,
+            "p999": 213.0209,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/convolve1D/convolve1D.bench.ts",
+      "group": null,
+      "name": "convolve1D",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 28,
+            "min": 2812.2125,
+            "max": 3243.3667,
+            "avg": 2878.7680035714297,
+            "p75": 2866.225,
+            "p99": 3243.3667,
+            "p995": 3243.3667,
+            "p999": 3243.3667,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/countBy/countBy.bench.ts",
+      "group": null,
+      "name": "countBy",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 34065,
+            "min": 9833.0,
+            "max": 865625.0,
+            "avg": 14682.0,
+            "p75": 15250.0,
+            "p99": 34875.0,
+            "p995": 44917.0,
+            "p999": 108042.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/countOccurrences/countOccurrences.bench.ts",
+      "group": null,
+      "name": "countOccurrences",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 149,
+            "min": 320.3792,
+            "max": 509.7667,
+            "avg": 360.56594026845653,
+            "p75": 375.4334,
+            "p99": 429.1417,
+            "p995": 509.7667,
+            "p999": 509.7667,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/countingSort/countingSort.bench.ts",
+      "group": null,
+      "name": "countingSort",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 55651,
+            "min": 7250.0,
+            "max": 486542.0,
+            "avg": 8987.0,
+            "p75": 8917.0,
+            "p99": 20750.0,
+            "p995": 43458.0,
+            "p999": 107500.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
     {
       "origin": "file:///Users/adamlusted/projects/PerfBench/methods/dedupe/dedupe.bench.ts",
       "group": null,
@@ -11,15 +495,37 @@
       "results": [
         {
           "ok": {
-            "n": 19,
-            "min": 5880.9584,
-            "max": 6080.5875,
-            "avg": 5934.260757894737,
-            "p75": 5947.0542,
-            "p99": 6080.5875,
-            "p995": 6080.5875,
-            "p999": 6080.5875,
+            "n": 16,
+            "min": 7300.2041,
+            "max": 10364.9833,
+            "avg": 8808.1408875,
+            "p75": 9059.8,
+            "p99": 10364.9833,
+            "p995": 10364.9833,
+            "p999": 10364.9833,
             "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/depthFirstSearch/depthFirstSearch.bench.ts",
+      "group": null,
+      "name": "depthFirstSearch",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 17217,
+            "min": 21459.0,
+            "max": 182459.0,
+            "avg": 29058.0,
+            "p75": 29791.0,
+            "p99": 80292.0,
+            "p995": 103833.0,
+            "p999": 140709.0,
+            "highPrecision": true,
             "usedExplicitTimers": false
           }
         }
@@ -33,15 +539,147 @@
       "results": [
         {
           "ok": {
-            "n": 68882,
-            "min": 6375.0,
-            "max": 57750.0,
-            "avg": 7261.0,
-            "p75": 7000.0,
-            "p99": 11375.0,
-            "p995": 19792.0,
-            "p999": 26959.0,
+            "n": 57955,
+            "min": 7167.0,
+            "max": 150042.0,
+            "avg": 8631.0,
+            "p75": 8167.0,
+            "p99": 17541.0,
+            "p995": 33666.0,
+            "p999": 68959.0,
             "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/dotProduct/dotProduct.bench.ts",
+      "group": null,
+      "name": "dotProduct",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 136,
+            "min": 375.0625,
+            "max": 930.9667,
+            "avg": 397.0030352941176,
+            "p75": 394.3459,
+            "p99": 408.7084,
+            "p995": 930.9667,
+            "p999": 930.9667,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/escapeHtml/escapeHtml.bench.ts",
+      "group": null,
+      "name": "escapeHtml",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 962,
+            "min": 45.725,
+            "max": 257.2166,
+            "avg": 52.53786995842002,
+            "p75": 53.8083,
+            "p99": 58.6833,
+            "p995": 62.3083,
+            "p999": 257.2166,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/fastFibonacci/fastFibonacci.bench.ts",
+      "group": null,
+      "name": "fastFibonacci",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 101,
+            "min": 539.0208,
+            "max": 587.0709,
+            "avg": 554.7514435643565,
+            "p75": 557.6708,
+            "p99": 586.6833,
+            "p995": 587.0709,
+            "p999": 587.0709,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/findDuplicate/findDuplicate.bench.ts",
+      "group": null,
+      "name": "findDuplicate",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 51512,
+            "min": 8500.0,
+            "max": 71417.0,
+            "avg": 9709.0,
+            "p75": 9667.0,
+            "p99": 14458.0,
+            "p995": 29625.0,
+            "p999": 35875.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/findMissingInteger/findMissingInteger.bench.ts",
+      "group": null,
+      "name": "findMissingInteger",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 157,
+            "min": 329.9167,
+            "max": 728.5958,
+            "avg": 341.4715273885351,
+            "p75": 339.5834,
+            "p99": 546.0041,
+            "p995": 728.5958,
+            "p999": 728.5958,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/flatten/flatten.bench.ts",
+      "group": null,
+      "name": "flatten",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 2261,
+            "min": 20.7583,
+            "max": 28.775,
+            "avg": 22.213419902697918,
+            "p75": 23.0125,
+            "p99": 25.3792,
+            "p995": 25.8541,
+            "p999": 27.0541,
+            "highPrecision": false,
             "usedExplicitTimers": false
           }
         }
@@ -55,15 +693,59 @@
       "results": [
         {
           "ok": {
-            "n": 40717,
-            "min": 10792.0,
-            "max": 276125.0,
-            "avg": 12284.0,
-            "p75": 12250.0,
-            "p99": 16167.0,
-            "p995": 16584.0,
-            "p999": 32750.0,
+            "n": 37786,
+            "min": 10750.0,
+            "max": 2020042.0,
+            "avg": 13237.0,
+            "p75": 13291.0,
+            "p99": 16625.0,
+            "p995": 21041.0,
+            "p999": 37917.0,
             "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/gcd/gcd.bench.ts",
+      "group": null,
+      "name": "gcd",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 8473,
+            "min": 5.4583,
+            "max": 10.625,
+            "avg": 5.908218871710178,
+            "p75": 5.85,
+            "p99": 7.3583,
+            "p995": 7.8583,
+            "p999": 8.4834,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/groupAnagrams/groupAnagrams.bench.ts",
+      "group": null,
+      "name": "groupAnagrams",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 87,
+            "min": 633.125,
+            "max": 701.8084,
+            "avg": 651.5733206896552,
+            "p75": 656.8917,
+            "p99": 701.8084,
+            "p995": 701.8084,
+            "p999": 701.8084,
+            "highPrecision": false,
             "usedExplicitTimers": false
           }
         }
@@ -78,13 +760,123 @@
         {
           "ok": {
             "n": 20,
-            "min": 4827.3416,
-            "max": 5673.0958,
-            "avg": 5552.089989999999,
-            "p75": 5633.0791,
-            "p99": 5673.0958,
-            "p995": 5673.0958,
-            "p999": 5673.0958,
+            "min": 5167.5,
+            "max": 5685.0792,
+            "avg": 5470.981040000001,
+            "p75": 5507.2583,
+            "p99": 5685.0792,
+            "p995": 5685.0792,
+            "p999": 5685.0792,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/heapSort/heapSort.bench.ts",
+      "group": null,
+      "name": "heapSort",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 43098,
+            "min": 10541.0,
+            "max": 62583.0,
+            "avg": 11605.0,
+            "p75": 11583.0,
+            "p99": 14417.0,
+            "p995": 18500.0,
+            "p999": 37292.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/histogram/histogram.bench.ts",
+      "group": null,
+      "name": "histogram",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 23,
+            "min": 3764.6542,
+            "max": 4210.5083,
+            "avg": 3873.6867739130444,
+            "p75": 3889.0875,
+            "p99": 4210.5083,
+            "p995": 4210.5083,
+            "p999": 4210.5083,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/indexBy/indexBy.bench.ts",
+      "group": null,
+      "name": "indexBy",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 51442,
+            "min": 8416.0,
+            "max": 72834.0,
+            "avg": 9722.0,
+            "p75": 9583.0,
+            "p99": 17584.0,
+            "p995": 31917.0,
+            "p999": 39041.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/insertionSort/insertionSort.bench.ts",
+      "group": null,
+      "name": "insertionSort",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 2809,
+            "min": 164541.0,
+            "max": 1266625.0,
+            "avg": 178689.0,
+            "p75": 177875.0,
+            "p99": 205333.0,
+            "p995": 223625.0,
+            "p999": 416584.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/integerPower/integerPower.bench.ts",
+      "group": null,
+      "name": "integerPower",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 5519,
+            "min": 8.3875,
+            "max": 14.1625,
+            "avg": 9.076406486682332,
+            "p75": 8.9708,
+            "p99": 10.9709,
+            "p995": 11.3584,
+            "p999": 12.7333,
             "highPrecision": false,
             "usedExplicitTimers": false
           }
@@ -99,14 +891,1312 @@
       "results": [
         {
           "ok": {
-            "n": 67987,
-            "min": 6458.0,
-            "max": 66292.0,
-            "avg": 7357.0,
-            "p75": 7083.0,
-            "p99": 11334.0,
-            "p995": 20167.0,
-            "p999": 27042.0,
+            "n": 61879,
+            "min": 6708.0,
+            "max": 72917.0,
+            "avg": 8084.0,
+            "p75": 7750.0,
+            "p99": 13291.0,
+            "p995": 23250.0,
+            "p999": 35250.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/isPalindrome/isPalindrome.bench.ts",
+      "group": null,
+      "name": "isPalindrome",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 17,
+            "min": 7334.7667,
+            "max": 7556.4333,
+            "avg": 7450.084552941176,
+            "p75": 7522.6917,
+            "p99": 7556.4333,
+            "p995": 7556.4333,
+            "p999": 7556.4333,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/joinRecordsByKey/joinRecordsByKey.bench.ts",
+      "group": null,
+      "name": "joinRecordsByKey",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 25847,
+            "min": 16500.0,
+            "max": 1511333.0,
+            "avg": 19353.0,
+            "p75": 18750.0,
+            "p99": 52208.0,
+            "p995": 55959.0,
+            "p999": 65541.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/levenshteinDistance/levenshteinDistance.bench.ts",
+      "group": null,
+      "name": "levenshteinDistance",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 193,
+            "min": 2503875.0,
+            "max": 4237250.0,
+            "avg": 2741643.0,
+            "p75": 2788750.0,
+            "p99": 3260458.0,
+            "p995": 4237250.0,
+            "p999": 4237250.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/longestCommonPrefix/longestCommonPrefix.bench.ts",
+      "group": null,
+      "name": "longestCommonPrefix",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 24,
+            "min": 1542.025,
+            "max": 4104.5375,
+            "avg": 3765.231070833334,
+            "p75": 3922.9875,
+            "p99": 4104.5375,
+            "p995": 4104.5375,
+            "p999": 4104.5375,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/longestCommonSubsequence/longestCommonSubsequence.bench.ts",
+      "group": null,
+      "name": "longestCommonSubsequence",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 233,
+            "min": 2011959.0,
+            "max": 4683958.0,
+            "avg": 2242122.0,
+            "p75": 2160250.0,
+            "p99": 3194083.0,
+            "p995": 3370958.0,
+            "p999": 4683958.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/longestIncreasingSubsequence/longestIncreasingSubsequence.bench.ts",
+      "group": null,
+      "name": "longestIncreasingSubsequence",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 52201,
+            "min": 8708.0,
+            "max": 85791.0,
+            "avg": 9581.0,
+            "p75": 9542.0,
+            "p99": 14167.0,
+            "p995": 21417.0,
+            "p999": 35875.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/longestSubstringWithoutRepeating/longestSubstringWithoutRepeating.bench.ts",
+      "group": null,
+      "name": "longestSubstringWithoutRepeating",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 56165,
+            "min": 7792.0,
+            "max": 65916.0,
+            "avg": 8905.0,
+            "p75": 8875.0,
+            "p99": 11834.0,
+            "p995": 15708.0,
+            "p999": 34916.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/lowerBound/lowerBound.bench.ts",
+      "group": null,
+      "name": "lowerBound",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 7742,
+            "min": 5.8083,
+            "max": 11.0667,
+            "avg": 6.467091823818104,
+            "p75": 6.5416,
+            "p99": 8.0791,
+            "p995": 8.6792,
+            "p999": 9.6834,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/matrixMultiply/matrixMultiply.bench.ts",
+      "group": null,
+      "name": "matrixMultiply",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 32204,
+            "min": 13916.0,
+            "max": 1398792.0,
+            "avg": 15532.0,
+            "p75": 15458.0,
+            "p99": 20875.0,
+            "p995": 24500.0,
+            "p999": 41958.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/maxBy/maxBy.bench.ts",
+      "group": null,
+      "name": "maxBy",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 175,
+            "min": 294.5125,
+            "max": 442.3292,
+            "avg": 304.5377114285714,
+            "p75": 305.7834,
+            "p99": 321.8834,
+            "p995": 442.3292,
+            "p999": 442.3292,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/mean/mean.bench.ts",
+      "group": null,
+      "name": "mean",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 171,
+            "min": 297.2375,
+            "max": 409.1208,
+            "avg": 311.54451695906425,
+            "p75": 313.7125,
+            "p99": 363.7792,
+            "p995": 409.1208,
+            "p999": 409.1208,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/median/median.bench.ts",
+      "group": null,
+      "name": "median",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 20,
+            "min": 5247.9459,
+            "max": 5493.7208,
+            "avg": 5323.69438,
+            "p75": 5342.3708,
+            "p99": 5493.7208,
+            "p995": 5493.7208,
+            "p999": 5493.7208,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/mergeIntervals/mergeIntervals.bench.ts",
+      "group": null,
+      "name": "mergeIntervals",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 38245,
+            "min": 11416.0,
+            "max": 77084.0,
+            "avg": 13078.0,
+            "p75": 12833.0,
+            "p99": 26042.0,
+            "p995": 40375.0,
+            "p999": 49208.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/mergeSort/mergeSort.bench.ts",
+      "group": null,
+      "name": "mergeSort",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 5229,
+            "min": 86209.0,
+            "max": 164958.0,
+            "avg": 95823.0,
+            "p75": 95250.0,
+            "p99": 125125.0,
+            "p995": 128958.0,
+            "p999": 143834.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/minBy/minBy.bench.ts",
+      "group": null,
+      "name": "minBy",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 176,
+            "min": 291.8834,
+            "max": 319.4459,
+            "avg": 301.4508778409091,
+            "p75": 303.2667,
+            "p99": 315.225,
+            "p995": 319.4459,
+            "p999": 319.4459,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/movingAverage/movingAverage.bench.ts",
+      "group": null,
+      "name": "movingAverage",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 35,
+            "min": 2025.1,
+            "max": 2205.0333,
+            "avg": 2062.9957114285717,
+            "p75": 2069.8625,
+            "p99": 2205.0333,
+            "p995": 2205.0333,
+            "p999": 2205.0333,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/nearestValue/nearestValue.bench.ts",
+      "group": null,
+      "name": "nearestValue",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 6978,
+            "min": 6.5,
+            "max": 18.6917,
+            "avg": 7.1768166809973915,
+            "p75": 7.1583,
+            "p99": 8.9709,
+            "p995": 9.4084,
+            "p999": 10.1625,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/parseCSV/parseCSV.bench.ts",
+      "group": null,
+      "name": "parseCSV",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 441,
+            "min": 107.6625,
+            "max": 129.9208,
+            "avg": 116.12003764172337,
+            "p75": 117.8458,
+            "p99": 125.9916,
+            "p995": 127.5208,
+            "p999": 129.9208,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/parseCSVRow/parseCSVRow.bench.ts",
+      "group": null,
+      "name": "parseCSVRow",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 1776,
+            "min": 24.6875,
+            "max": 41.3916,
+            "avg": 28.32280146396398,
+            "p75": 29.45,
+            "p99": 32.375,
+            "p995": 33.1416,
+            "p999": 39.9792,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/parseJSONLines/parseJSONLines.bench.ts",
+      "group": null,
+      "name": "parseJSONLines",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 289,
+            "min": 171.275,
+            "max": 199.6708,
+            "avg": 179.16665536332184,
+            "p75": 180.8625,
+            "p99": 195.2833,
+            "p995": 195.7959,
+            "p999": 199.6708,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/parseKeyValuePairs/parseKeyValuePairs.bench.ts",
+      "group": null,
+      "name": "parseKeyValuePairs",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 482,
+            "min": 96.4542,
+            "max": 127.7292,
+            "avg": 105.96310643153527,
+            "p75": 108.4958,
+            "p99": 116.5458,
+            "p995": 118.5583,
+            "p999": 127.7292,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/parseLogLine/parseLogLine.bench.ts",
+      "group": null,
+      "name": "parseLogLine",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 398,
+            "min": 119.075,
+            "max": 155.9791,
+            "avg": 128.87946859296474,
+            "p75": 130.1708,
+            "p99": 141.7,
+            "p995": 151.15,
+            "p999": 155.9791,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/parseQueryString/parseQueryString.bench.ts",
+      "group": null,
+      "name": "parseQueryString",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 111,
+            "min": 481.1375,
+            "max": 518.9917,
+            "avg": 496.28975405405396,
+            "p75": 499.7042,
+            "p99": 516.025,
+            "p995": 518.9917,
+            "p999": 518.9917,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/parseSemver/parseSemver.bench.ts",
+      "group": null,
+      "name": "parseSemver",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 298,
+            "min": 163.9458,
+            "max": 189.6542,
+            "avg": 173.87321174496637,
+            "p75": 175.7083,
+            "p99": 186.7791,
+            "p995": 189.3625,
+            "p999": 189.6542,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/parseURLPath/parseURLPath.bench.ts",
+      "group": null,
+      "name": "parseURLPath",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 233,
+            "min": 210.7583,
+            "max": 280.9875,
+            "avg": 224.9256377682403,
+            "p75": 227.1083,
+            "p99": 240.4917,
+            "p995": 261.65,
+            "p999": 280.9875,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/partialSort/partialSort.bench.ts",
+      "group": null,
+      "name": "partialSort",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 19,
+            "min": 5742.7125,
+            "max": 5984.2667,
+            "avg": 5792.736194736841,
+            "p75": 5793.625,
+            "p99": 5984.2667,
+            "p995": 5984.2667,
+            "p999": 5984.2667,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/partition/partition.bench.ts",
+      "group": null,
+      "name": "partition",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 37,
+            "min": 1770.7959,
+            "max": 2396.4833,
+            "avg": 1877.28131081081,
+            "p75": 1878.2458,
+            "p99": 2396.4833,
+            "p995": 2396.4833,
+            "p999": 2396.4833,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/prefixSum/prefixSum.bench.ts",
+      "group": null,
+      "name": "prefixSum",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 47,
+            "min": 1221.6791,
+            "max": 4064.0584,
+            "avg": 1358.0812170212766,
+            "p75": 1266.4417,
+            "p99": 4064.0584,
+            "p995": 4064.0584,
+            "p999": 4064.0584,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/primeSieve/primeSieve.bench.ts",
+      "group": null,
+      "name": "primeSieve",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 33127,
+            "min": 11125.0,
+            "max": 75584.0,
+            "avg": 15098.0,
+            "p75": 15792.0,
+            "p99": 23584.0,
+            "p995": 31750.0,
+            "p999": 44458.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/quickSelect/quickSelect.bench.ts",
+      "group": null,
+      "name": "quickSelect",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 1780,
+            "min": 260917.0,
+            "max": 3606042.0,
+            "avg": 282513.0,
+            "p75": 284125.0,
+            "p99": 308959.0,
+            "p995": 314584.0,
+            "p999": 354292.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/quickSort/quickSort.bench.ts",
+      "group": null,
+      "name": "quickSort",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 75813,
+            "min": 5834.0,
+            "max": 1751875.0,
+            "avg": 6597.0,
+            "p75": 6459.0,
+            "p99": 8333.0,
+            "p995": 13042.0,
+            "p999": 29500.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/radixSort/radixSort.bench.ts",
+      "group": null,
+      "name": "radixSort",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 25768,
+            "min": 16417.0,
+            "max": 104333.0,
+            "avg": 19413.0,
+            "p75": 19209.0,
+            "p99": 41875.0,
+            "p995": 45708.0,
+            "p999": 54917.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/rangeSum/rangeSum.bench.ts",
+      "group": null,
+      "name": "rangeSum",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 20084,
+            "min": 2.2958,
+            "max": 9.8042,
+            "avg": 2.4909057060345785,
+            "p75": 2.4542,
+            "p99": 3.6417,
+            "p995": 3.9542,
+            "p999": 4.7791,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/replaceAllOccurrences/replaceAllOccurrences.bench.ts",
+      "group": null,
+      "name": "replaceAllOccurrences",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 61,
+            "min": 972.4375,
+            "max": 1161.9709,
+            "avg": 993.5517098360654,
+            "p75": 998.9583,
+            "p99": 1161.9709,
+            "p995": 1161.9709,
+            "p999": 1161.9709,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/reverseString/reverseString.bench.ts",
+      "group": null,
+      "name": "reverseString",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 17,
+            "min": 7314.9542,
+            "max": 7627.7291,
+            "avg": 7459.787017647059,
+            "p75": 7494.4209,
+            "p99": 7627.7291,
+            "p995": 7627.7291,
+            "p999": 7627.7291,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/rotateArray/rotateArray.bench.ts",
+      "group": null,
+      "name": "rotateArray",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 35,
+            "min": 1913.1333,
+            "max": 2262.1291,
+            "avg": 2040.4114285714288,
+            "p75": 2074.3625,
+            "p99": 2262.1291,
+            "p995": 2262.1291,
+            "p999": 2262.1291,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/runLengthDecode/runLengthDecode.bench.ts",
+      "group": null,
+      "name": "runLengthDecode",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 1052,
+            "min": 42.6875,
+            "max": 67.175,
+            "avg": 48.009447338403085,
+            "p75": 48.8958,
+            "p99": 53.25,
+            "p995": 54.3792,
+            "p999": 62.1084,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/runLengthEncode/runLengthEncode.bench.ts",
+      "group": null,
+      "name": "runLengthEncode",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 17,
+            "min": 7356.7709,
+            "max": 7872.1709,
+            "avg": 7468.992899999999,
+            "p75": 7486.4125,
+            "p99": 7872.1709,
+            "p995": 7872.1709,
+            "p999": 7872.1709,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/serializeQueryString/serializeQueryString.bench.ts",
+      "group": null,
+      "name": "serializeQueryString",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 126,
+            "min": 420.6667,
+            "max": 651.7875,
+            "avg": 432.9575428571429,
+            "p75": 434.5625,
+            "p99": 457.625,
+            "p995": 651.7875,
+            "p999": 651.7875,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/shortestPath/shortestPath.bench.ts",
+      "group": null,
+      "name": "shortestPath",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 12475,
+            "min": 29291.0,
+            "max": 104292.0,
+            "avg": 40117.0,
+            "p75": 41417.0,
+            "p99": 67375.0,
+            "p995": 71875.0,
+            "p999": 79250.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/slidingWindowMax/slidingWindowMax.bench.ts",
+      "group": null,
+      "name": "slidingWindowMax",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 26,
+            "min": 3098.2875,
+            "max": 3305.9,
+            "avg": 3138.4213192307698,
+            "p75": 3138.7625,
+            "p99": 3305.9,
+            "p995": 3305.9,
+            "p999": 3305.9,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/slugify/slugify.bench.ts",
+      "group": null,
+      "name": "slugify",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 26,
+            "min": 3229.0958,
+            "max": 3305.7458,
+            "avg": 3271.059119230769,
+            "p75": 3287.0625,
+            "p99": 3305.7458,
+            "p995": 3305.7458,
+            "p999": 3305.7458,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/snakeToCamel/snakeToCamel.bench.ts",
+      "group": null,
+      "name": "snakeToCamel",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 127,
+            "min": 417.1833,
+            "max": 469.8542,
+            "avg": 428.07251417322846,
+            "p75": 429.625,
+            "p99": 451.9708,
+            "p995": 469.8542,
+            "p999": 469.8542,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/sortByKey/sortByKey.bench.ts",
+      "group": null,
+      "name": "sortByKey",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 42445,
+            "min": 8292.0,
+            "max": 1422375.0,
+            "avg": 11785.0,
+            "p75": 15292.0,
+            "p99": 20833.0,
+            "p995": 43917.0,
+            "p999": 55083.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/sortNearlySorted/sortNearlySorted.bench.ts",
+      "group": null,
+      "name": "sortNearlySorted",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 18342,
+            "min": 23208.0,
+            "max": 83834.0,
+            "avg": 27277.0,
+            "p75": 26458.0,
+            "p99": 51875.0,
+            "p995": 54167.0,
+            "p999": 63917.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/stableSort/stableSort.bench.ts",
+      "group": null,
+      "name": "stableSort",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 43775,
+            "min": 8209.0,
+            "max": 1518584.0,
+            "avg": 11426.0,
+            "p75": 14667.0,
+            "p99": 19458.0,
+            "p995": 43375.0,
+            "p999": 52333.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/standardDeviation/standardDeviation.bench.ts",
+      "group": null,
+      "name": "standardDeviation",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 26,
+            "min": 3128.7917,
+            "max": 3264.9875,
+            "avg": 3168.7193961538455,
+            "p75": 3184.9458,
+            "p99": 3264.9875,
+            "p995": 3264.9875,
+            "p999": 3264.9875,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/substringSearch/substringSearch.bench.ts",
+      "group": null,
+      "name": "substringSearch",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 1234,
+            "min": 37.9167,
+            "max": 55.1709,
+            "avg": 40.87520486223656,
+            "p75": 41.7208,
+            "p99": 45.4167,
+            "p995": 46.35,
+            "p999": 50.4,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/sum/sum.bench.ts",
+      "group": null,
+      "name": "sum",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 171,
+            "min": 296.4583,
+            "max": 330.4917,
+            "avg": 311.7925222222224,
+            "p75": 315.6041,
+            "p99": 325.8208,
+            "p995": 330.4917,
+            "p999": 330.4917,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/threeSum/threeSum.bench.ts",
+      "group": null,
+      "name": "threeSum",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 11875,
+            "min": 36750.0,
+            "max": 136500.0,
+            "avg": 42144.0,
+            "p75": 41625.0,
+            "p99": 77708.0,
+            "p995": 81083.0,
+            "p999": 95417.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/topK/topK.bench.ts",
+      "group": null,
+      "name": "topK",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 19,
+            "min": 5747.0625,
+            "max": 5840.6625,
+            "avg": 5796.6914421052625,
+            "p75": 5816.6875,
+            "p99": 5840.6625,
+            "p995": 5840.6625,
+            "p999": 5840.6625,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/twoSum/twoSum.bench.ts",
+      "group": null,
+      "name": "twoSum",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 45884,
+            "min": 9167.0,
+            "max": 90708.0,
+            "avg": 10900.0,
+            "p75": 10917.0,
+            "p99": 20500.0,
+            "p995": 32875.0,
+            "p999": 40166.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/unescapeHtml/unescapeHtml.bench.ts",
+      "group": null,
+      "name": "unescapeHtml",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 138,
+            "min": 381.3,
+            "max": 421.2833,
+            "avg": 391.78877101449285,
+            "p75": 394.1416,
+            "p99": 418.75,
+            "p995": 421.2833,
+            "p999": 421.2833,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/uniqueBy/uniqueBy.bench.ts",
+      "group": null,
+      "name": "uniqueBy",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 57204,
+            "min": 6875.0,
+            "max": 67083.0,
+            "avg": 8744.0,
+            "p75": 8167.0,
+            "p99": 15667.0,
+            "p995": 23791.0,
+            "p999": 35959.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/unzip/unzip.bench.ts",
+      "group": null,
+      "name": "unzip",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 88275,
+            "min": 4250.0,
+            "max": 64000.0,
+            "avg": 5666.0,
+            "p75": 4750.0,
+            "p99": 19167.0,
+            "p995": 22750.0,
+            "p999": 29709.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/upperBound/upperBound.bench.ts",
+      "group": null,
+      "name": "upperBound",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 7789,
+            "min": 5.7875,
+            "max": 11.5417,
+            "avg": 6.428277750674038,
+            "p75": 6.5084,
+            "p99": 7.9,
+            "p995": 8.25,
+            "p999": 9.125,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/variance/variance.bench.ts",
+      "group": null,
+      "name": "variance",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 26,
+            "min": 3132.0292,
+            "max": 3271.375,
+            "avg": 3196.3759538461545,
+            "p75": 3225.7542,
+            "p99": 3271.375,
+            "p995": 3271.375,
+            "p999": 3271.375,
+            "highPrecision": false,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/wordFrequency/wordFrequency.bench.ts",
+      "group": null,
+      "name": "wordFrequency",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 47863,
+            "min": 9041.0,
+            "max": 71875.0,
+            "avg": 10449.0,
+            "p75": 10458.0,
+            "p99": 16458.0,
+            "p995": 26250.0,
+            "p999": 38166.0,
+            "highPrecision": true,
+            "usedExplicitTimers": false
+          }
+        }
+      ]
+    },
+    {
+      "origin": "file:///Users/adamlusted/projects/PerfBench/methods/zip/zip.bench.ts",
+      "group": null,
+      "name": "zip",
+      "baseline": false,
+      "results": [
+        {
+          "ok": {
+            "n": 21983,
+            "min": 20167.0,
+            "max": 155875.0,
+            "avg": 22756.0,
+            "p75": 22375.0,
+            "p99": 43250.0,
+            "p995": 48584.0,
+            "p999": 63083.0,
             "highPrecision": true,
             "usedExplicitTimers": false
           }
