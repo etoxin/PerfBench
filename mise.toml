@@ -1,2 +1,36 @@
+monorepo_root = true
+
+[monorepo]
+config_roots = ["methods/*"]
+
 [tools]
 deno = "2.9.4"
+
+[tasks.test]
+description = "Run tests for every method"
+depends = ["//methods/...:test"]
+
+[tasks.bench]
+description = "Benchmark every method"
+depends = ["//methods/...:bench"]
+
+[tasks.check]
+description = "Type-check every method"
+depends = ["//methods/...:check"]
+
+[tasks.lint]
+description = "Lint every method"
+depends = ["//methods/...:lint"]
+
+[tasks.fmt]
+description = "Format every method"
+depends = ["//methods/...:fmt"]
+
+[tasks."fmt-check"]
+description = "Check formatting for every method"
+depends = ["//methods/...:fmt-check"]
+
+[tasks.verify]
+description = "Run all non-mutating validation tasks for every method"
+depends = [":fmt-check", ":lint", ":check", ":test"]
+
